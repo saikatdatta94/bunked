@@ -1,0 +1,149 @@
+<ion-header>
+  <ion-navbar style="padding-top: 6%" color="secondary">
+    <ion-title >
+      Guide (For better understanding)
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+  
+  
+
+
+
+
+<ion-card>
+
+  <ion-card-header>
+    Tap to add a new Subject<br>in <b>Homepage</b><ion-icon color ="secondary" name="home"></ion-icon>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-fab right top>
+    <button ion-fab mini  color="secondary"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-content>
+    <b>Make sure you are connected to internet</b>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-content> 
+       <b>This app considers your qualifying percentage as 75%</b>
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header>
+   <b>How to Edit or Delete a Subject?</b>
+  </ion-card-header>
+
+  <ion-card-content>
+
+  Swipe the subject list item <b>Right</b> to <b>Delete</b> and <b>Left</b> to <b>Edit</b>
+
+    <ion-list>
+  
+  <ion-item-sliding>
+
+    <button ion-item>
+          Swipe Me       
+    </button>   
+
+
+
+         <ion-item-options side="left">
+            
+            <button ion-button icon-only color="danger">
+              
+              <ion-icon name="trash" >          </ion-icon>
+
+            </button>
+
+          </ion-item-options>
+            
+               
+          <ion-item-options side="right">
+
+          <button ion-button icon-only color="secondary">
+              
+              <ion-icon name="create">      </ion-icon>
+
+          </button>
+            
+            
+          </ion-item-options>
+
+
+
+  </ion-item-sliding>
+ 
+</ion-list>
+  </ion-card-content>
+
+</ion-card>
+<ion-card>
+
+  <ion-card-header>
+    <b>How to view the statistics Page?</b>
+  </ion-card-header>
+
+  <ion-card-content>
+   Tap on a Subject to see the attendance Percentage of that subject. This will redirect you to the page.
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header>
+    <b>How to know percentage?</b>
+  </ion-card-header>
+
+  <ion-card-content>
+    <button ion-button color="custom"> <ion-icon name="sad"></ion-icon>Attend</button>
+    <button ion-button color="custom"> <ion-icon name="happy"></ion-icon>Bunked</button>
+    <br/>
+    Tap <b>Attend</b> if you Attended a class or tap on <b>Bunked</b> if youv'e bunked that class
+
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <ion-card-header>
+    <b>How to view the details?</b>
+  </ion-card-header>
+
+  <ion-card-content>
+    Tap on the <ion-icon name="ios-information-circle-outline" color="secondary"></ion-icon>  icon in the statistics page to see the details
+  </ion-card-content>
+
+</ion-card>
+
+ <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon color="custom" md="md-share"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab (click)="shareWhatsapp()"><ion-icon name="logo-whatsapp" color="secondary"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+
+ 
+
+</ion-content>

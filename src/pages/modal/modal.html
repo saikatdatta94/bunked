@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar style="padding-top: 6%" color="secondary">
+    <ion-title>Bunked</ion-title>
+
+    <ion-buttons  start (click)="dismiss()">
+             
+          <button style="text-transform: none;" ion-button icon-only><ion-icon  name="close"></ion-icon> </button>
+             
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content padding>
+<img id="icon2" src="assets/img/icon.png">
+
+<ion-list>
+         <ion-item>
+           <ion-label floating>Email</ion-label>
+           <ion-input type="text"  [(ngModel)]="emailField"></ion-input>
+         </ion-item>
+
+         <ion-item>
+           <ion-label floating>Password</ion-label>
+           <ion-input type="password"  [(ngModel)]="passwordField"></ion-input>
+         </ion-item>
+
+</ion-list>
+
+    <button style="text-transform: none;" ion-button block color="login" (click)="logUserIn()">Login</button>
+    <button style="text-transform: none;" ion-button block color="login" (click)="signUserUp()">Register</button>
+    
+<img style="position:fixed;left:0;bottom: -1%;z-index: -10;width:100%" id ="cloud" src="assets/img/cloud.png">
+</ion-content>

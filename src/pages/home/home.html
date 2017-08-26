@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar style="padding-top: 6%" color="secondary">
+    <ion-title >Subjects</ion-title>
+
+
+    <ion-buttons  start (click)="signUserOut()">
+             
+          <button style="text-transform: none;" ion-button icon-only> Log Out  <ion-icon  name="log-out"></ion-icon> </button>
+             
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+<ion-list >
+  
+  <ion-item-sliding *ngFor="let subject of subjects | async">
+
+    <button ion-item (click)="redirectToGraph(subject.$key)">
+         
+          {{subject.name}}
+         
+    </button>   
+
+
+
+         <ion-item-options side="left">
+            
+            <button ion-button icon-only color="danger" (click)="deleteSubject(subject.$key)">
+              
+              <ion-icon name="trash" >          </ion-icon>
+
+            </button>
+
+          </ion-item-options>
+            
+               
+          <ion-item-options side="right">
+
+          <button ion-button icon-only color="secondary" (click)="editSubject(subject)">
+              
+              <ion-icon name="create">      </ion-icon>
+
+          </button>
+            
+            
+          </ion-item-options>
+
+
+
+  </ion-item-sliding>
+ 
+</ion-list>
+ 
+
+
+ <ion-fab right bottom>
+    <button ion-fab  color="secondary" (click)="addSubject()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+
+</ion-content>

@@ -1,0 +1,54 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar style="padding-top: 6%" color="secondary">
+    <ion-title >login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+<img id="icon" #myImage src="assets/img/icon.png">
+
+<p id="head"><b>Bunked</b></p>
+<div id="para"><b>Sign Up Using Social Login</b></div>
+
+<!--
+ <ion-list>
+         <ion-item>
+           <ion-label floating>Email</ion-label>
+           <ion-input type="text"  [(ngModel)]="emailField"></ion-input>
+         </ion-item>
+
+         <ion-item>
+           <ion-label floating>Password</ion-label>
+           <ion-input type="password"  [(ngModel)]="passwordField"></ion-input>
+         </ion-item>
+
+</ion-list>
+
+   
+    <button ion-button block (click)="signUserUp()">Sign Up</button>
+    <button ion-button block (click)="logUserIn()">Login</button>
+-->  
+     <button style="position:fixed;text-transform: none;bottom: 7%" ion-button block icon-left color="danger" (click)="googleSignIn()">
+             <ion-icon name="logo-google" color="light"></ion-icon> Login with Google+
+     </button>
+     <button style="position:fixed;bottom: 0%;text-transform: none;color:#4a9964;text-decoration: underline; "   ion-button clear block (click)="signEmail()">
+            Sign Up with Email
+     </button>
+     <!--
+     <button style="position:fixed;bottom: 5%;right:0%;" ion-button icon-left color="primary" (click)="signInWithFacebook()">
+             <ion-icon name="logo-facebook"></ion-icon> Login
+     </button>
+     -->
+<img style="position:fixed;left:0;bottom: -1%;z-index: -10;width:100%" id ="cloud" src="assets/img/cloud.png">
+</ion-content>
+

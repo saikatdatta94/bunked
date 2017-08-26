@@ -1,0 +1,37 @@
+.ios, .android, .md{
+
+page-login {
+
+#icon{
+    position: relative;
+    top: -70%;
+    left: 35%;	
+	transition: 2s cubic-bezier(.18,.89,.32,1.20) !important;
+	height: 110px;
+	width: 110px;
+
+	
+}
+
+#head{
+	position: fixed !important;
+	left: 35%;
+	top:45%;
+	font-size: 30px;
+	color: #5bf93b;
+	 text-shadow: 2px 2px 5px #21417a;
+	 }
+#para{
+    position: fixed !important;
+	left: 16%;
+	top:58%;
+	font-size: 18px;
+	width: 70%;
+	text-align: center;
+	color: #4a9964;
+
+}
+
+
+}
+}
